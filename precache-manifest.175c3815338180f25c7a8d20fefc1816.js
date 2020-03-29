@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "fcf2bc67a457777fb92c56bb5be67a62",
+    "revision": "58c4e0b20c06e5bfd51575dc7e2cb0ec",
     "url": "/CryptoIndex/index.html"
   },
   {
-    "revision": "9d469957a702231800b5",
-    "url": "/CryptoIndex/static/css/main.a9a2a0a2.chunk.css"
+    "revision": "dc9a512213dc82dfaef8",
+    "url": "/CryptoIndex/static/css/main.45c76c64.chunk.css"
   },
   {
     "revision": "b6b32bf626fd86d28153",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/CryptoIndex/static/js/2.95db84d0.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "9d469957a702231800b5",
-    "url": "/CryptoIndex/static/js/main.a90166c8.chunk.js"
+    "revision": "dc9a512213dc82dfaef8",
+    "url": "/CryptoIndex/static/js/main.693fd128.chunk.js"
   },
   {
     "revision": "0b82b33610e226313e79",
