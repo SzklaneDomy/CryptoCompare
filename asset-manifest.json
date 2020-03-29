@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/CryptoIndex/static/css/main.a9a2a0a2.chunk.css",
-    "main.js": "/CryptoIndex/static/js/main.640c52a7.chunk.js",
-    "main.js.map": "/CryptoIndex/static/js/main.640c52a7.chunk.js.map",
+    "main.js": "/CryptoIndex/static/js/main.a90166c8.chunk.js",
+    "main.js.map": "/CryptoIndex/static/js/main.a90166c8.chunk.js.map",
     "runtime-main.js": "/CryptoIndex/static/js/runtime-main.8995ea5c.js",
     "runtime-main.js.map": "/CryptoIndex/static/js/runtime-main.8995ea5c.js.map",
     "static/js/2.95db84d0.chunk.js": "/CryptoIndex/static/js/2.95db84d0.chunk.js",
     "static/js/2.95db84d0.chunk.js.map": "/CryptoIndex/static/js/2.95db84d0.chunk.js.map",
     "index.html": "/CryptoIndex/index.html",
-    "precache-manifest.e6031883e0e6e2f8fb477e0ed8df92d7.js": "/CryptoIndex/precache-manifest.e6031883e0e6e2f8fb477e0ed8df92d7.js",
+    "precache-manifest.0b289f7ff72a7e162eb653c7feb2f2f8.js": "/CryptoIndex/precache-manifest.0b289f7ff72a7e162eb653c7feb2f2f8.js",
     "service-worker.js": "/CryptoIndex/service-worker.js",
     "static/css/main.a9a2a0a2.chunk.css.map": "/CryptoIndex/static/css/main.a9a2a0a2.chunk.css.map",
     "static/js/2.95db84d0.chunk.js.LICENSE.txt": "/CryptoIndex/static/js/2.95db84d0.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.8995ea5c.js",
     "static/js/2.95db84d0.chunk.js",
     "static/css/main.a9a2a0a2.chunk.css",
-    "static/js/main.640c52a7.chunk.js"
+    "static/js/main.a90166c8.chunk.js"
   ]
 }
