@@ -8,23 +8,32 @@ import {
   Tooltip,
   ResponsiveContainer
 } from "recharts";
+import GridList from "@material-ui/core/GridList";
+import GridListTile from "@material-ui/core/GridListTile";
 
-import CustomTooltip from './CustomTooltip'
+import CustomTooltip from "./CustomTooltip";
+import { GridListTileBar } from "@material-ui/core";
 
 export default class Graph extends Component {
   render() {
     const graphData = this.props.data;
     return (
       <div>
-        <ResponsiveContainer width="100%" height={300} >
-          <LineChart data={graphData}>
-            <Line type="monotone" dataKey="price" stroke="#8884d8" />
-            <CartesianGrid stroke="#ccc" />
-            <XAxis dataKey="date" />
-            <YAxis dataKey="price" />
-            <Tooltip content={<CustomTooltip />} />
-          </LineChart>
-        </ResponsiveContainer>
+        <GridList cellHeight={300} cols={1} style={{width: "100%"}}>
+          {graphData.map(el => (
+            <GridListTile key={el.name} >
+              <ResponsiveContainer width="100%" height={300}>
+                <LineChart data={el}>
+                  <Line type="monotone" dataKey="price" stroke="#8884d8" />
+                  <CartesianGrid stroke="#ccc" />
+                  <XAxis dataKey="date" />
+                  <YAxis dataKey="price" />
+                  <Tooltip content={<CustomTooltip />} />
+                </LineChart>
+              </ResponsiveContainer>
+            </GridListTile>
+          ))}
+        </GridList>
       </div>
     );
   }
