@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export const makeApiCall = payload => {
-  const apiKey = process.env.REACT_APP_CRYPTOCOMPARE_KEY
+  const apiKey = process.env.REACT_APP_CRYPTO_INDEX
   return axios(
     `https://min-api.cryptocompare.com/data/v2/histoday?api_key=${apiKey}&fsym=${payload}&tsym=USD&limit=30`
   , {
