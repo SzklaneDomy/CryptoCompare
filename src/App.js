@@ -12,7 +12,7 @@ import * as apiCall from "./apiCall";
 class App extends Component {
   state = {
     historicalData: null,
-    graphData: [],
+    graphData: []
   };
 
   getApiData = name => {
@@ -24,11 +24,11 @@ class App extends Component {
         });
       })
       .then(() => {
-        const data = this.state.historicalData.map(el => {
+        let data = this.state.historicalData.map(el => {
           return {
-            date: moment.unix(el.time).format("MM/DD/YYYY"),
-            price: Math.floor(el.high + el.low / 2),
-            name: name,
+              date: moment.unix(el.time).format("MM/DD/YYYY"),
+              price: Math.round(el.high + el.low * 100) / 100,
+              name: name
           };
         });
         this.setState({ graphData: [...this.state.graphData, data] });
@@ -42,7 +42,9 @@ class App extends Component {
         <Logo />
         <CryptoNavBar handleCryptoName={this.getApiData} />
         <About />
-        {this.state.graphData.length ? <Graph data={this.state.graphData} /> : null}
+        {this.state.graphData.length ? (
+          <Graph data={this.state.graphData} />
+        ) : null}
       </div>
     );
   }
