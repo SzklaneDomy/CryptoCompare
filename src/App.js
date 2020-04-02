@@ -28,12 +28,6 @@ class App extends Component {
         const data = {
           name: name,
           id: shortid.generate(),
-          // dates: this.state.historicalData.map(el =>
-          //   moment.unix(el.time).format("MM/DD/YYYY")
-          // ),
-          // prices: this.state.historicalData.map(
-          //   el => Math.round(el.high + el.low * 100) / 100
-          // )
           data: this.state.historicalData.map(el => {
             return {
               dates: moment.unix(el.time).format("MM/DD/YYYY"),
@@ -42,7 +36,6 @@ class App extends Component {
           })
         };
         this.setState({ graphData: [...this.state.graphData, data] });
-        console.log(this.state);
       });
   };
 

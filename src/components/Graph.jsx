@@ -61,7 +61,7 @@ export default class Graph extends Component {
                     tick={<CustomizedAxisTick />}
                   />
                   <YAxis dataKey="prices" />
-                  {/* <Tooltip content={<CustomTooltip />} /> */}
+                  <Tooltip content={<CustomTooltip />} />
                 </LineChart>
               </ResponsiveContainer>
             </GridListTile>
